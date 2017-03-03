@@ -56,6 +56,7 @@ public class ReadQuery {
             PreparedStatement ps = conn.prepareStatement(query);
             this.results = ps.executeQuery();
         } catch (SQLException ex) {
+            System.out.println("Something went wrong at line 52 of ReadQuery.java");
             Logger.getLogger(ReadQuery.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
@@ -105,7 +106,8 @@ public class ReadQuery {
         }
         
         table += "</table>";
-                return table;
+        
+        return table;
                 
     }
 }
