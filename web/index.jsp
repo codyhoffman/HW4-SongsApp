@@ -6,7 +6,7 @@
         <title>My Songs</title>
     </head>
     <body>
-        <h1>My Songs App</h1>
+        <h1>My Songs Database</h1>
         
         <a href="read">View All Songs</a>
     </body>
