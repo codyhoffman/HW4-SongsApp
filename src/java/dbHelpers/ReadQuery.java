@@ -99,6 +99,10 @@ public class ReadQuery {
                 table += song.getSongGenre();
                 table += "</td>";  
                 
+                table += "<td>";
+                table += "<a href=delete?songID=" + song.getSongID() + "> Delete </a>";
+                table += "</td>"; 
+                
                 table += "</tr>";
             }
         } catch (SQLException ex) {
