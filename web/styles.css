@@ -1,0 +1,99 @@
+body {
+    background-color: #D2B48C;
+}
+
+
+h1 {
+    text-align: center;
+}
+
+a{
+    margin-left: 45%;
+    color: black;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+form {
+    width: 20%;
+    margin-left: 35%;
+    background-color: #F08080;
+    padding: 70px;
+}
+form label, input {
+    padding-bottom: 10px;
+}
+form input[type=submit]{
+    width: 23em;
+    height: 10em;
+}
+form label{
+    float: left;
+    color: white;
+    
+}
+
+form input {
+    float: right;
+}
+
+#left input {
+    float: left;
+}
+
+#right input {
+    float: right;
+}
+
+td a {
+    margin-left: 0%;
+}
+
+table, th, td {
+    border-collapse: collapse;
+    margin-left: 10%;
+    padding: 5px;
+}
+
+table, th, td {
+   border: 3px solid #FFFFFF;
+}
+
+table {
+    width: 80%;
+}
+
+th {
+    height: 70px;
+    vertical-align: middle;
+    text-align: center;
+    border-bottom: 1px solid #FFFFFF;
+    background-color: #FFFF99;
+    color: #F08080;
+}
+
+tr {
+        background-color: #F08080;
+        color: #FFFFFF;
+}
+
+td {
+    height: 50px;
+    vertical-align: middle;
+    text-align: center;
+    border-bottom: 1px solid #FFFFFF;
+}
+
+tr:hover {
+    background-color: #CCCCCC;
+    color: black;
+}
+
+tr:nth-child(even) {
+    background-color: #EDEDED;
+    color: black;
+}
+
+tr:nth-child(even):hover {
+    background-color: #CCCCCC;
+    color: #FFFFFF;
+}

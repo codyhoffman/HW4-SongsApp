@@ -64,8 +64,32 @@ public class ReadQuery {
     public String getHTMLTable() {
         
         String table = "";
+        table += "<table>";
+        // begin table header
         
-        table += "<table border=1>";
+        table += "<tr>";
+        
+        table += "<th>";
+        table += "Song ID";
+        table += "</th>";
+        
+        table += "<th>";
+        table += "Song Name";
+        table += "</th>";
+        
+        table += "<th>";
+        table += "Artist Name";
+        table += "</th>"; 
+                        
+        table += "<th>";
+        table += "Length";
+        table += "</th>";
+                
+        table += "<th>";
+        table += "Genre";
+        table += "</th>";
+        
+        table += "</tr>";
         
         try {
             while(this.results.next()) {
