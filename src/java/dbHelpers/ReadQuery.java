@@ -56,7 +56,6 @@ public class ReadQuery {
             PreparedStatement ps = conn.prepareStatement(query);
             this.results = ps.executeQuery();
         } catch (SQLException ex) {
-            System.out.println("Something went wrong at line 52 of ReadQuery.java");
             Logger.getLogger(ReadQuery.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
@@ -124,7 +123,7 @@ public class ReadQuery {
                 table += "</td>";  
                 
                 table += "<td>";
-                table += "<a href=delete?songID=" + song.getSongID() + "> Delete </a>";
+                table += "<a href=update?songID=" + song.getSongID() + "> Update </a>" + " " + "<a href=delete?songID=" + song.getSongID() + "> Delete </a>";
                 table += "</td>"; 
                 
                 table += "</tr>";

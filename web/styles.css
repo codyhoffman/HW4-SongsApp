@@ -104,3 +104,5 @@ tr:nth-child(even):hover {
     background-color: #CCCCCC;
     color: #FFFFFF;
 }
+
+input[readonly] {background-color: gray;}

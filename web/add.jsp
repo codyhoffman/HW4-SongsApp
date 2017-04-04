@@ -9,29 +9,31 @@
     <div id="wrapper">
     <body>
         <h1>Add New Song</h1>
-        <div id="wrapper">
+        
         <form name="addForm" action="addSong" method="get">
-            <div id="wrapper">
-            <label>Song Name:</label>
-            </div>
-            <input type="text" name="songName" value="" />
-            <br><br><br>
-            <div id="wrapper">
-            <label>Artist Name:</label>
-            </div>
-            <input type="text" name="artistName" value="" />
-            <br><br><br>
-            <div id="wrapper">
-            <label>Length:</label>
-            </div>
-            <input type="text" name="songLength" value="" />
-            <br><br><br>
-            <div id="wrapper"><label>Genre:</label></div>
-            <input type="text" name="songGenre" value="" />
-            <br><br><br><br>
-            <input type="submit" name="submit" value="Submit" />
+            <table>               
+                <tr>
+                    <td>Song Name:</td>
+                    <td><input type="text" name="songName" value="" /></td>
+                </tr>
+                <tr>
+                    <td>Artist Name:</td>
+                    <td><input type="text" name="artistName" value="" /></td>
+                </tr>
+                <tr>
+                    <td>Length:</td>              
+                    <td><input type="text" name="songLength" value="" /></td>
+                </tr>
+                <tr>
+                    <td><label>Genre:</label></td>
+                    <td><input type="text" name="songGenre" value="" /></td>
+                </tr>
+            </table>
+            <br>
+            <input type="submit" name="submit" value="Submit" />       
         </form>
-        </div>
+        
+        
     </body>
     </div>
 </html>
