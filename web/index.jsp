@@ -7,10 +7,17 @@
         <link rel="stylesheet" type="text/css" href="styles.css">
     </head>
     <body>
-        <h1>My Songs Database</h1>
-        
-        <a href="read">View All Songs</a>
-        <br><br>
-        <a href="search.jsp">Search Songs</a>
+        <div class="wrap">
+            
+            <%@ include file="includes/header.jsp" %>
+            <%@ include file="includes/nav.jsp" %>
+            
+            <div class="main">
+                <h1>My Songs Database</h1>
+            </div>
+            
+            <%@ include file="includes/footer.jsp" %>
+            
+        </div>
     </body>
 </html>

@@ -10,17 +10,23 @@
     <% String table = (String) request.getAttribute("table"); %>
     
     <body>
-        <h1>My Songs</h1>
+        <div class="wrap">
+            
+        <%@ include file="includes/header.jsp" %>
         
-        <%= table %>
+        <%@ include file="includes/nav.jsp" %>
         
+        <div class="main">
+            <h1>My Songs</h1>
+        
+            <%= table %>
+        
+            <br><br>
+        
+        </div>
+
         <br><br>
-        
-        <a href="add"> Add New Song</a>
-        <br><br>
-        <a href="search.jsp">Search Songs</a>
-        
-        <br><br>
-        
+        <%@ include file="includes/footer.jsp" %>
+        </div>
     </body>
 </html>
