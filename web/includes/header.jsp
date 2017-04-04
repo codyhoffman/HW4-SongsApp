@@ -1,6 +1,6 @@
 <div class="header">
     <div class="headerImg">
-                IMG placeholder
+        <img src="includes/musicNote.png" width="150px" />
     </div>
     <div class="headerText">
         <h1>Songs App</h1>
