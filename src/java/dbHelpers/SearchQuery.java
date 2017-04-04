@@ -61,7 +61,7 @@ public class SearchQuery {
         }
     }
     
-    public String getHTMLTable() {
+    public String getHTMLTable() throws SQLException {
         
         String table = "";
         table += "<table>";
@@ -90,6 +90,22 @@ public class SearchQuery {
         table += "</th>";
         
         table += "</tr>";
+        
+        try{
+            if(!this.results.isBeforeFirst()) {
+                table += "<tr>";
+                table += "<td colspan='6'> Sorry, this record does not exist</td>";
+                table += "</tr>";
+            }
+            else {
+                while(this.results.next()){
+                    Songs song = new Songs();
+                    song.setSongID(this.results.getInt("songID"));
+                }
+            }
+        } catch (SQLException ex) {
+            Logger.getLogger(SearchQuery.class.getName()).log(Level.SEVERE, null, ex);
+        }
         
         try {
             while(this.results.next()) {

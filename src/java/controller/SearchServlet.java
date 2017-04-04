@@ -8,6 +8,9 @@ package controller;
 import dbHelpers.SearchQuery;
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.sql.SQLException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -81,7 +84,12 @@ public class SearchServlet extends HttpServlet {
         
         // get HTML talbe
         sq.doSearch(songName);
-        String table = sq.getHTMLTable();
+        String table = null;
+        try {
+            table = sq.getHTMLTable();
+        } catch (SQLException ex) {
+            Logger.getLogger(SearchServlet.class.getName()).log(Level.SEVERE, null, ex);
+        }
         // pass back to read.jsp
         request.setAttribute("table", table);
         String url = "/read.jsp";
