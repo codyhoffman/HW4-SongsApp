@@ -10,5 +10,7 @@
         <h1>My Songs Database</h1>
         
         <a href="read">View All Songs</a>
+        <br><br>
+        <a href="search.jsp">Search Songs</a>
     </body>
 </html>

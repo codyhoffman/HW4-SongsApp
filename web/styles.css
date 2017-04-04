@@ -29,11 +29,7 @@ form {
 form label, input {
     padding-bottom: 10px;
 }
-form input[type=submit]{
-    width: 13.5em;
-    height: 10em;
-    align-items: center;
-}
+
 form label{
     float: left;
     color: #FFFFFF;

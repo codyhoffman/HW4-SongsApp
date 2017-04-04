@@ -17,6 +17,8 @@
         <br><br>
         
         <a href="add"> Add New Song</a>
+        <br><br>
+        <a href="search.jsp">Search Songs</a>
         
         <br><br>
         
