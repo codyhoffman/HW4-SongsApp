@@ -5,7 +5,9 @@
         <group>
             <file>file:/Users/codyhoffman/NetBeansProjects/songsApp/web/includes/nav.jsp</file>
             <file>file:/Users/codyhoffman/NetBeansProjects/songsApp/web/read.jsp</file>
+            <file>file:/Users/codyhoffman/NetBeansProjects/songsApp/src/java/dbHelpers/SearchQuery.java</file>
             <file>file:/Users/codyhoffman/NetBeansProjects/songsApp/web/includes/footer.jsp</file>
+            <file>file:/Users/codyhoffman/NetBeansProjects/songsApp/src/java/controller/SearchServlet.java</file>
             <file>file:/Users/codyhoffman/NetBeansProjects/songsApp/web/index.jsp</file>
             <file>file:/Users/codyhoffman/NetBeansProjects/songsApp/web/add.jsp</file>
             <file>file:/Users/codyhoffman/NetBeansProjects/songsApp/web/styles.css</file>

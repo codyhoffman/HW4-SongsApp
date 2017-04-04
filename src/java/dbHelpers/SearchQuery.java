@@ -97,12 +97,6 @@ public class SearchQuery {
                 table += "<td colspan='6'> Sorry, this record does not exist</td>";
                 table += "</tr>";
             }
-            else {
-                while(this.results.next()){
-                    Songs song = new Songs();
-                    song.setSongID(this.results.getInt("songID"));
-                }
-            }
         } catch (SQLException ex) {
             Logger.getLogger(SearchQuery.class.getName()).log(Level.SEVERE, null, ex);
         }
